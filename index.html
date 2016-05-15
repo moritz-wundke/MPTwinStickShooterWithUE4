@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/league.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+
+                <!-- HEADER -->
+                <section data-markdown>
+                    <script type="text/template">
+                    # Unreal Twin Blast
+
+                    Multiplayer ready Twin Stick Shooter built with Unteal Engine 4
+
+                    <small>[Moritz Wundke] [twitter]<br>
+                    Sr. Programmer at [Playspace] [ps], Official [UE4] [ue4] Community Mod and Engine contributor</small>
+
+                    [twitter]: https://twitter.com/B_Thax
+                    [ps]: https://www.playspace.com
+                    [ue4]: https://github.com/moritz-wundke/MPTwinStickShooterWithUE4 "Unreal Twin Blast - Project"
+                    </script>
+                </section>
+
+                <!-- OVERVIEW -->
+                <section data-markdown>
+                    <script type="text/template">
+                    # Lets get to work!
+
+                     * Step 1
+                     * Step 2
+                     * Step 3
+                    </script>
+                </section>
+
+                <!-- FOOTER -->
+                <section data-markdown>
+                    <script type="text/template">
+                    # Thanks for listening!
+
+                    ## Any questions? Now is your time.
+
+                    <small>[Slides] [slides] and the full [project] [project] are freely avaiulable on GitHub/small>
+
+                    [slides]: http://moritz-wundke.github.io/MPTwinStickShooterWithUE4
+                    [project]: https://github.com/moritz-wundke/MPTwinStickShooterWithUE4
+                    </script>
+                </section>
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                  history: true
+                , transition: 'convex'
+                , backgroundTransition: 'convex'
+
+                // Viewport
+                , width: 960
+                , height: 700
+                , margin: 0.1
+                , minScale: 0.2
+                , maxScale: 1.5
+
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                , dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
+</html>
